@@ -3,7 +3,6 @@
 This project builds a text classification pipeline to detect the language and sentiment of English product reviews, using a mix of natural language processing (NLP) and machine learning techniques.
 
 **Author**: Cao Thanh Bằng  
-**Notebook**: FullName_CK_K304_HV.ipynb
 
 ---
 
@@ -24,6 +23,14 @@ The goal of this project is to build a robust pipeline to preprocess, vectorize,
 - Total records: several thousand entries
 
 ---
+## Running
+
+```bash
+# Clone this repository
+git clone https://github.com/caothanhbang455/Project_predict_India_rental_house.git
+
+# Open the notebook
+jupyter notebook FullName_CK_K304_HV.ipynb
 
 ## Key Steps
 
@@ -40,7 +47,6 @@ The goal of this project is to build a robust pipeline to preprocess, vectorize,
 ### 2. Feature Extraction
 
 - Apply TF-IDF vectorization using `TfidfVectorizer`
-- Use both unigrams and bigrams (`ngram_range=(1,2)`)
 - Limit vocabulary to the top 900 most frequent features
 - Automatically remove English stopwords via `stop_words='english'`
 
@@ -64,3 +70,5 @@ The pipeline (vectorizer + model) is exported using `pickle`:
 ```python
 import pickle
 pickle.dump(_pipeline, open('model_checkpoints/model.pkl', 'wb'))
+
+
