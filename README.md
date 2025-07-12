@@ -31,6 +31,7 @@ git clone https://github.com/caothanhbang455/Project_predict_India_rental_house.
 
 # Open the notebook
 jupyter notebook FullName_CK_K304_HV.ipynb
+```
 
 ## Key Steps
 
